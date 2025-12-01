@@ -355,6 +355,15 @@ const Index = () => {
                 </CardContent>
               </Card>
 
+              <Card className="border-l-4 border-l-gray-400">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary">11:50 – 12:00</Badge>
+                    <CardTitle className="text-xl">Перерыв</CardTitle>
+                  </div>
+                </CardHeader>
+              </Card>
+
               <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
@@ -449,6 +458,15 @@ const Index = () => {
                     <p className="text-[#4e3842] font-medium">«Неблагоприятный детский опыт: от Фрейда до эпигенетики»</p>
                   </div>
                 </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-gray-400">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary">17:00 – 17:10</Badge>
+                    <CardTitle className="text-xl">Перерыв</CardTitle>
+                  </div>
+                </CardHeader>
               </Card>
 
               <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
