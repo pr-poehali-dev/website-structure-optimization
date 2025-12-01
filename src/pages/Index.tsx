@@ -1,35 +1,9 @@
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    organization: '',
-    position: '',
-    comment: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Форма отправлена:', formData);
-    alert('Спасибо за регистрацию! Мы отправим подтверждение на указанный email.');
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-[#763349]/5 to-[#763349]/10">
       <header className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
@@ -606,8 +580,11 @@ const Index = () => {
 
       <section id="registration" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
+              <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
+                Регистрация
+              </Badge>
               <h2 className="text-4xl font-bold mb-4 text-gray-900">
                 Регистрация на конференцию
               </h2>
@@ -616,96 +593,16 @@ const Index = () => {
               </p>
             </div>
 
-            <Card>
+            <Card className="border-2">
               <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <Label htmlFor="fullName">ФИО *</Label>
-                    <Input
-                      id="fullName"
-                      name="fullName"
-                      value={formData.fullName}
-                      onChange={handleChange}
-                      required
-                      placeholder="Иванов Иван Иванович"
-                      className="mt-2"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="email">Email *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      placeholder="email@example.com"
-                      className="mt-2"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="phone">Телефон *</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                      placeholder="+7 (999) 123-45-67"
-                      className="mt-2"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="organization">Организация</Label>
-                    <Input
-                      id="organization"
-                      name="organization"
-                      value={formData.organization}
-                      onChange={handleChange}
-                      placeholder="Название организации"
-                      className="mt-2"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="position">Должность</Label>
-                    <Input
-                      id="position"
-                      name="position"
-                      value={formData.position}
-                      onChange={handleChange}
-                      placeholder="Ваша должность"
-                      className="mt-2"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="comment">Комментарий</Label>
-                    <Textarea
-                      id="comment"
-                      name="comment"
-                      value={formData.comment}
-                      onChange={handleChange}
-                      placeholder="Дополнительная информация"
-                      className="mt-2"
-                      rows={4}
-                    />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full">
-                    <Icon name="CheckCircle" size={20} className="mr-2" />
-                    Зарегистрироваться
-                  </Button>
-
-                  <p className="text-sm text-gray-500 text-center">
-                    Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
-                  </p>
-                </form>
+                <iframe 
+                  src="https://forms.yandex.ru/u/692d3eec068ff05c85b7e074/?iframe=1" 
+                  frameBorder="0" 
+                  name="ya-form-692d3eec068ff05c85b7e074" 
+                  width="100%" 
+                  style={{ height: '800px' }}
+                  className="rounded-lg"
+                ></iframe>
               </CardContent>
             </Card>
           </div>
