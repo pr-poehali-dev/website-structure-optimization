@@ -9,19 +9,11 @@ const Index = () => {
       <header className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <img 
-                src="https://cdn.poehali.dev/files/6f236989-341e-418b-926d-cce45f0d1f8f.jpg" 
-                alt="РПА Логотип" 
-                className="h-14 w-auto"
-              />
-              <div>
-                <h1 className="text-base md:text-lg font-bold text-gray-900 leading-tight">
-                  II Конференция Московского отделения РПА
-                </h1>
-                <p className="text-xs md:text-sm text-gray-600">Вызов принять: 30 лет трансформации</p>
-              </div>
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/files/6f236989-341e-418b-926d-cce45f0d1f8f.jpg" 
+              alt="РПА Логотип" 
+              className="h-14 w-auto"
+            />
             
             <nav className="hidden md:flex items-center gap-6">
               <a 
@@ -72,26 +64,15 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-[#4e3842] via-[#5f3846] to-[#763349] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-white/20 text-white border-white/30 text-lg px-6 py-2">
-              19 декабря 2025
-            </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Вызов принять: 30 лет трансформации психотерапии
             </h1>
-            <p className="text-xl text-white/90 mb-4">
+            <p className="text-xl text-white/90 mb-8">
               II Конференция Московского отделения Российской психотерапевтической ассоциации
             </p>
-            <div className="flex flex-col gap-3 items-center mb-8">
-              <Badge className="bg-white/20 text-white border-white/30 text-lg px-6 py-2">
-                Очное участие
-              </Badge>
-              <Badge className="bg-green-500/20 text-white border-green-400/30 text-lg px-6 py-2">
-                Участие бесплатно
-              </Badge>
-              <p className="text-white/80 text-sm max-w-md mt-2">
-                Вы можете поддержать нас, чтобы мы продолжали организовывать такие конференции
-              </p>
-            </div>
+            <p className="text-2xl text-white mb-8">
+              <strong>19 декабря 2025 года встречаемся очно</strong>
+            </p>
             <div className="flex flex-wrap gap-4 justify-center items-center text-lg">
               <div className="flex items-center gap-2">
                 <Icon name="MapPin" size={24} />
@@ -629,6 +610,9 @@ const Index = () => {
                 <Icon name="Heart" className="mr-2" size={20} />
                 Поддержать нас
               </Button>
+              <p className="text-gray-600 text-sm mt-4 max-w-md mx-auto">
+                Вы можете поддержать нас, чтобы мы продолжали организовывать такие конференции
+              </p>
             </div>
           </div>
         </div>
@@ -644,6 +628,9 @@ const Index = () => {
               <h2 className="text-4xl font-bold mb-4 text-gray-900">
                 Регистрация на конференцию
               </h2>
+              <Badge className="mb-4 bg-green-500 text-white text-lg px-6 py-2">
+                Участие бесплатно
+              </Badge>
               <p className="text-gray-600 text-lg">
                 Заполните форму, чтобы принять участие в конференции
               </p>
@@ -661,6 +648,79 @@ const Index = () => {
                 ></iframe>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-br from-[#763349]/5 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
+                Важная информация
+              </Badge>
+              <h2 className="text-4xl font-bold mb-4 text-gray-900">
+                Частые вопросы
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="border-2 border-[#763349]/20 hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#763349]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon name="MapPin" className="text-[#763349]" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-2 text-gray-900">Только очный формат</h3>
+                      <p className="text-gray-600">Конференция проводится исключительно в очном формате. Онлайн-трансляции не будет.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-[#763349]/20 hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#763349]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon name="Video" className="text-[#763349]" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-2 text-gray-900">Записи не будет</h3>
+                      <p className="text-gray-600">Мероприятие не записывается. Все материалы доступны только для очных участников.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-[#763349]/20 hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#763349]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon name="ClipboardCheck" className="text-[#763349]" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-2 text-gray-900">Регистрация обязательна</h3>
+                      <p className="text-gray-600">Для участия в конференции необходима предварительная регистрация через форму на сайте.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-[#763349]/20 hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon name="Users" className="text-red-600" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-2 text-gray-900">Места ограничены</h3>
+                      <p className="text-gray-600">Количество мест ограничено. Регистрируйтесь заранее, чтобы гарантировать своё участие.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
