@@ -35,13 +35,17 @@ const Index = () => {
       <header className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                <Icon name="Heart" className="text-white" size={24} />
-              </div>
+            <div className="flex items-center gap-4">
+              <img 
+                src="https://cdn.poehali.dev/files/6f236989-341e-418b-926d-cce45f0d1f8f.jpg" 
+                alt="РПА Логотип" 
+                className="h-14 w-auto"
+              />
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Конференция РПА 2025</h1>
-                <p className="text-sm text-gray-600">Вызов принять</p>
+                <h1 className="text-base md:text-lg font-bold text-gray-900 leading-tight">
+                  II Конференция Московского отделения РПА
+                </h1>
+                <p className="text-xs md:text-sm text-gray-600">Вызов принять: 30 лет трансформации</p>
               </div>
             </div>
             
@@ -92,7 +96,7 @@ const Index = () => {
               Вызов принять: 30 лет трансформации психотерапии
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Ежегодная конференция Российской психотерапевтической ассоциации
+              II Конференция Московского отделения Российской психотерапевтической ассоциации
             </p>
             <div className="flex flex-wrap gap-4 justify-center items-center text-lg">
               <div className="flex items-center gap-2">
