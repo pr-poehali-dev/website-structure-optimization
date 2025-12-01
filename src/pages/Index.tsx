@@ -15,38 +15,45 @@ const Index = () => {
               className="h-14 w-auto"
             />
             
-            <nav className="hidden md:flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-4">
               <a 
                 href="#about" 
                 onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
+                className="text-sm text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
               >
                 О конференции
               </a>
               <a 
                 href="#program" 
                 onClick={(e) => { e.preventDefault(); document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
+                className="text-sm text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
               >
                 Программа
               </a>
               <a 
                 href="#speakers" 
                 onClick={(e) => { e.preventDefault(); document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
+                className="text-sm text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
               >
                 Спикеры
+              </a>
+              <a 
+                href="#info" 
+                onClick={(e) => { e.preventDefault(); document.getElementById('info')?.scrollIntoView({ behavior: 'smooth' }); }}
+                className="text-sm text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
+              >
+                Важная информация
               </a>
               <Button 
                 variant="outline"
                 size="sm"
                 onClick={() => window.open('https://finance.ozon.ru/apps/sbp/ozonbankpay/019a72f4-edc6-7423-abbf-5a3a4a72efcf', '_blank')}
-                className="border-[#763349] text-[#763349] hover:bg-[#763349] hover:text-white"
+                className="border-[#763349] text-[#763349] hover:bg-[#763349] hover:text-white text-xs"
               >
-                <Icon name="Heart" size={16} className="mr-1" />
+                <Icon name="Heart" size={14} className="mr-1" />
                 Поддержать
               </Button>
-              <Button onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button size="sm" onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}>
                 Зарегистрироваться
               </Button>
             </nav>
@@ -639,13 +646,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
+              <Badge className="mb-6 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-lg px-8 py-3">
                 Регистрация
               </Badge>
-              <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                Регистрация на конференцию
-              </h2>
-              <Badge className="mb-4 bg-green-500 text-white text-lg px-6 py-2">
+              <Badge className="mb-6 bg-green-500 text-white text-xl px-8 py-3">
                 Участие бесплатно
               </Badge>
               <p className="text-gray-600 text-lg">
@@ -669,7 +673,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-[#763349]/5 to-white">
+      <section id="info" className="py-16 bg-gradient-to-br from-[#763349]/5 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
