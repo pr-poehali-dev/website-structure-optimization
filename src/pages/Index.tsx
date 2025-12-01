@@ -69,9 +69,12 @@ const Index = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Вызов принять: 30 лет трансформации психотерапии
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-white/90 mb-4">
               II Конференция Московского отделения Российской психотерапевтической ассоциации
             </p>
+            <Badge className="mb-8 bg-white/20 text-white border-white/30 text-lg px-6 py-2">
+              Очное участие • Бесплатно
+            </Badge>
             <div className="flex flex-wrap gap-4 justify-center items-center text-lg">
               <div className="flex items-center gap-2">
                 <Icon name="MapPin" size={24} />
@@ -125,10 +128,9 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-[#5f3846] to-[#763349] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Icon name="Lightbulb" className="text-white" size={32} />
                   </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">5 направлений</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Подходы</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    КПТ, схема-терапия, экзистенциальный анализ, гештальт, системная терапия. 
-                    ИИ в психотерапии и клинические разборы.
+                    КПТ, схема-терапия, экзистенциальный анализ, гештальт терапия, системная семейная терапия, психоаналитическая психотерапия.
                   </p>
                 </div>
               </div>
@@ -245,7 +247,7 @@ const Index = () => {
                   <CardDescription className="text-base">
                     <div className="space-y-2 mt-4">
                       <p>• Приветственные слова: Бабин С.М., Хетрик С.</p>
-                      <p>• Видеообращения представителей психотерапевтических сообществ Бразилии, Индонезии</p>
+                      <p>• Видеообращения представителей психотерапевтических сообществ дружественных стран</p>
                       <p>• Отчет по 2025 году – Мальцева Е.В.</p>
                     </div>
                   </CardDescription>
@@ -360,6 +362,15 @@ const Index = () => {
                 </CardHeader>
               </Card>
 
+              <Card className="border-l-4 border-l-gray-400">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary">15:50 – 16:00</Badge>
+                    <CardTitle className="text-xl">Перерыв</CardTitle>
+                  </div>
+                </CardHeader>
+              </Card>
+
               <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
@@ -393,6 +404,15 @@ const Index = () => {
                     </div>
                   </div>
                 </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-gray-400">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary">17:00 – 17:10</Badge>
+                    <CardTitle className="text-xl">Перерыв</CardTitle>
+                  </div>
+                </CardHeader>
               </Card>
 
               <Card className="border-l-4 border-l-[#5f3846] bg-[#763349]/5">
@@ -573,6 +593,14 @@ const Index = () => {
               <p className="text-gray-600 mb-6">
                 И другие ведущие специалисты в области психотерапии
               </p>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-[#4e3842] to-[#763349] hover:from-[#5f3846] hover:to-[#874357]"
+                onClick={() => window.open('https://www.tinkoff.ru/rm/pukhovskiy.vladimir1/n9t883826', '_blank')}
+              >
+                <Icon name="Heart" className="mr-2" size={20} />
+                Поддержать нас
+              </Button>
             </div>
           </div>
         </div>
