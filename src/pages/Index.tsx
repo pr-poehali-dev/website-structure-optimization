@@ -12,7 +12,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/6f236989-341e-418b-926d-cce45f0d1f8f.jpg" 
               alt="РПА Логотип" 
-              className="h-14 w-auto"
+              className="h-10 md:h-14 w-auto"
             />
             
             <nav className="hidden md:flex items-center gap-4">
@@ -59,45 +59,46 @@ const Index = () => {
             </nav>
 
             <Button 
-              className="md:hidden"
+              className="md:hidden text-xs px-3"
+              size="sm"
               onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Зарегистрироваться
+              Регистрация
             </Button>
           </div>
         </div>
       </header>
 
-      <section className="py-20 bg-gradient-to-br from-[#4e3842] via-[#5f3846] to-[#763349] text-white">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-[#4e3842] via-[#5f3846] to-[#763349] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
               Вызов принять: 30 лет трансформации психотерапии
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-base md:text-xl text-white/90 mb-4 md:mb-8">
               II Конференция Московского отделения Российской психотерапевтической ассоциации
             </p>
-            <p className="text-2xl text-white mb-8">
+            <p className="text-xl md:text-2xl text-white mb-6 md:mb-8">
               <strong>19 декабря 2025 года встречаемся очно</strong>
             </p>
-            <div className="flex flex-wrap gap-4 justify-center items-center text-lg">
+            <div className="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4 justify-center items-center text-sm md:text-lg">
               <div className="flex items-center gap-2">
-                <Icon name="MapPin" size={24} />
-                <span>Московский центр инновационных технологий</span>
+                <Icon name="MapPin" size={20} className="md:w-6 md:h-6" />
+                <span className="text-sm md:text-base">Московский центр инновационных технологий</span>
               </div>
               <div className="flex items-center gap-2">
-                <Icon name="Clock" size={24} />
-                <span>09:00 – 18:00</span>
+                <Icon name="Clock" size={20} className="md:w-6 md:h-6" />
+                <span className="text-sm md:text-base">09:00 – 18:00</span>
               </div>
             </div>
-            <p className="mt-4 text-white/80">
+            <p className="mt-3 md:mt-4 text-sm md:text-base text-white/80">
               Москва, просп. Вернадского, 96
             </p>
           </div>
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-white relative overflow-hidden">
+      <section id="about" className="py-12 md:py-20 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
@@ -105,10 +106,10 @@ const Index = () => {
               <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
                 О конференции
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
                 Вызов принять: <br />30 лет трансформации психотерапии
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Главное событие года в профессиональном сообществе психотерапевтов. 
                 Место встречи экспертов, обмена опытом и обсуждения будущего психотерапии.
               </p>
@@ -238,14 +239,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="program" className="py-16 bg-gray-50">
+      <section id="program" className="py-12 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
                 Программа
               </Badge>
-              <h2 className="text-4xl font-bold text-gray-900">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Программа конференции
               </h2>
             </div>
@@ -504,17 +505,17 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="speakers" className="py-20 bg-white">
+      <section id="speakers" className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
                 Спикеры
               </Badge>
-              <h2 className="text-4xl font-bold mb-4 text-gray-900">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
                 Ведущие эксперты России
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Профессора, доктора наук и ведущие практики в области психотерапии
               </p>
             </div>
@@ -643,7 +644,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="registration" className="py-16 bg-white">
+      <section id="registration" className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -674,14 +675,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="info" className="py-16 bg-gradient-to-br from-[#763349]/5 to-white">
+      <section id="info" className="py-12 md:py-16 bg-gradient-to-br from-[#763349]/5 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
                 Важная информация
               </Badge>
-              <h2 className="text-4xl font-bold mb-4 text-gray-900">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
                 Важно знать
               </h2>
             </div>
