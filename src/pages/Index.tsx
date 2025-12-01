@@ -41,7 +41,7 @@ const Index = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Конференция РПА 2025</h1>
-                <p className="text-sm text-gray-600">Векторы психотерапии</p>
+                <p className="text-sm text-gray-600">Вызов принять</p>
               </div>
             </div>
             
@@ -89,7 +89,7 @@ const Index = () => {
               19 декабря 2025
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Векторы психотерапии: изменения и постоянство
+              Вызов принять: 30 лет трансформации психотерапии
             </h1>
             <p className="text-xl text-white/90 mb-8">
               Ежегодная конференция Российской психотерапевтической ассоциации
@@ -120,7 +120,7 @@ const Index = () => {
                 О конференции
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-                Векторы психотерапии: <br />изменения и постоянство
+                Вызов принять: <br />30 лет трансформации психотерапии
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Главное событие года в профессиональном сообществе психотерапевтов. 
