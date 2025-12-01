@@ -749,17 +749,17 @@ const Index = () => {
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="font-bold text-lg mb-4">Контакты</h3>
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center gap-2">
                   <Icon name="Mail" size={16} />
-                  <span>info@rpa-conference.ru</span>
+                  <span>rpa.moscow@yandex.ru</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
-                  <span>+7 (495) 123-45-67</span>
+                  <span>+7 (926) 635-20-69</span>
                 </div>
               </div>
             </div>
@@ -783,7 +783,39 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+          <div className="border-t border-gray-800 pt-8 mb-8">
+            <h3 className="font-bold text-lg mb-6 text-center">Соорганизаторы</h3>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <a 
+                href="https://mental-health-russia.ru/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors text-center"
+              >
+                <p className="font-semibold">Союз охраны</p>
+                <p className="font-semibold">психического здоровья</p>
+              </a>
+              <a 
+                href="https://gorodets.ru/page/s-sopz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors text-center"
+              >
+                <p className="font-semibold">Издательство</p>
+                <p className="font-semibold">Городец</p>
+              </a>
+              <a 
+                href="https://rosmededucation.ru/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors text-center"
+              >
+                <p className="font-semibold">НОЦ СМТ</p>
+              </a>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
             © 2025 Конференция РПА. Все права защищены.
           </div>
         </div>
