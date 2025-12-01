@@ -539,7 +539,7 @@ const Index = () => {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-gray-900 mb-1">Шумский Владимир Борисович</h3>
                       <p className="text-sm text-gray-600 mb-2">
-                        К.психол.н., Высшая школа экзистенциального анализа
+                        к.п.н., Высшая школа экзистенциального анализа
                       </p>
                       <Badge variant="outline" className="text-xs">Экзистенциальный анализ</Badge>
                     </div>
@@ -573,7 +573,7 @@ const Index = () => {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-gray-900 mb-1">Хломов Даниил Нестерович</h3>
                       <p className="text-sm text-gray-600 mb-2">
-                        К.психол.н., директор Московского гештальт института
+                        к.п.н., директор Московского гештальт института
                       </p>
                       <Badge variant="outline" className="text-xs">Гештальт-терапия</Badge>
                     </div>
@@ -588,7 +588,7 @@ const Index = () => {
                       <Icon name="Users" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">Команда ИСТ</h3>
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Представители Московского института Схема-терапии</h3>
                       <p className="text-sm text-gray-600 mb-2">
                         Ялтонская А., Гегель Н., Марьясова Д.
                       </p>
@@ -678,7 +678,7 @@ const Index = () => {
                 Важная информация
               </Badge>
               <h2 className="text-4xl font-bold mb-4 text-gray-900">
-                Частые вопросы
+                Важно знать
               </h2>
             </div>
 
