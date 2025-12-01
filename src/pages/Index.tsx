@@ -31,7 +31,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-white via-[#763349]/5 to-[#763349]/10">
       <header className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
@@ -53,21 +53,21 @@ const Index = () => {
               <a 
                 href="#about" 
                 onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+                className="text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
               >
                 О конференции
               </a>
               <a 
                 href="#program" 
                 onClick={(e) => { e.preventDefault(); document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+                className="text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
               >
                 Программа
               </a>
               <a 
                 href="#speakers" 
                 onClick={(e) => { e.preventDefault(); document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+                className="text-gray-700 hover:text-[#763349] transition-colors cursor-pointer"
               >
                 Спикеры
               </a>
@@ -86,7 +86,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#4e3842] via-[#5f3846] to-[#763349] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-white/20 text-white border-white/30 text-lg px-6 py-2">
@@ -120,7 +120,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm px-4 py-1">
+              <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
                 О конференции
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
@@ -134,8 +134,8 @@ const Index = () => {
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="group hover:scale-105 transition-transform duration-300">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 h-full border-2 border-blue-200 hover:border-blue-400 transition-colors">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-br from-[#4e3842]/10 to-[#763349]/20 rounded-2xl p-8 h-full border-2 border-[#763349]/30 hover:border-[#763349] transition-colors">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#4e3842] to-[#763349] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Icon name="Users" className="text-white" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-3 text-gray-900">15+ спикеров</h3>
@@ -147,8 +147,8 @@ const Index = () => {
               </div>
 
               <div className="group hover:scale-105 transition-transform duration-300">
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 h-full border-2 border-purple-200 hover:border-purple-400 transition-colors">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-br from-[#5f3846]/10 to-[#763349]/20 rounded-2xl p-8 h-full border-2 border-[#763349]/30 hover:border-[#763349] transition-colors">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#5f3846] to-[#763349] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Icon name="Lightbulb" className="text-white" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-3 text-gray-900">5 направлений</h3>
@@ -160,8 +160,8 @@ const Index = () => {
               </div>
 
               <div className="group hover:scale-105 transition-transform duration-300">
-                <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-8 h-full border-2 border-indigo-200 hover:border-indigo-400 transition-colors">
-                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-br from-[#4e3842]/10 to-[#5f3846]/20 rounded-2xl p-8 h-full border-2 border-[#4e3842]/30 hover:border-[#4e3842] transition-colors">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#4e3842] to-[#5f3846] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Icon name="MessageCircle" className="text-white" size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-3 text-gray-900">Нетворкинг</h3>
@@ -186,19 +186,19 @@ const Index = () => {
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Практикующие психотерапевты и психологи</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Врачи-психиатры и клинические психологи</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Студенты и специалисты в обучении</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Преподаватели психотерапевтических программ</span>
                     </li>
                   </ul>
@@ -208,8 +208,8 @@ const Index = () => {
               <Card className="border-2 hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                      <Icon name="Star" className="text-orange-600" size={24} />
+                    <div className="w-12 h-12 bg-[#763349]/10 rounded-lg flex items-center justify-center">
+                      <Icon name="Star" className="text-[#763349]" size={24} />
                     </div>
                     <CardTitle className="text-xl">Что вы получите</CardTitle>
                   </div>
@@ -217,19 +217,19 @@ const Index = () => {
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Знания от ведущих экспертов России</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Сертификат участника конференции</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Материалы докладов и презентации</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <Icon name="Check" className="text-[#763349] mt-1" size={18} />
                       <span className="text-gray-700">Новые профессиональные контакты</span>
                     </li>
                   </ul>
@@ -244,7 +244,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm px-4 py-1">
+              <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
                 Программа
               </Badge>
               <h2 className="text-4xl font-bold text-gray-900">
@@ -262,10 +262,10 @@ const Index = () => {
                 </CardHeader>
               </Card>
 
-              <Card className="border-l-4 border-l-purple-600">
+              <Card className="border-l-4 border-l-[#763349]">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-purple-600">09:40 – 10:15</Badge>
+                    <Badge className="bg-[#763349]">09:40 – 10:15</Badge>
                     <CardTitle className="text-xl">Открытие конференции</CardTitle>
                   </div>
                   <CardDescription className="text-base">
@@ -278,10 +278,10 @@ const Index = () => {
                 </CardHeader>
               </Card>
 
-              <Card className="border-l-4 border-l-indigo-600 bg-indigo-50/50">
+              <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-indigo-600">10:15 – 12:00</Badge>
+                    <Badge className="bg-[#763349]">10:15 – 12:00</Badge>
                     <CardTitle className="text-2xl">Пленарное заседание</CardTitle>
                   </div>
                   <CardDescription className="text-lg font-semibold text-gray-900 mb-4">
@@ -291,13 +291,13 @@ const Index = () => {
                 <CardContent className="space-y-4">
                   <div className="bg-white p-4 rounded-lg">
                     <div className="flex items-start gap-4">
-                      <Badge variant="outline" className="mt-1">10:15 – 10:30</Badge>
+                      <Badge variant="outline" className="mt-1 border-[#4e3842] text-[#4e3842]">10:15 – 10:30</Badge>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">Костюк Георгий Петрович</h4>
                         <p className="text-sm text-gray-600 mb-2">
                           Профессор, д.м.н., главный врач ПКБ №1 им. Н.А. Алексеева, главный психиатр Москвы
                         </p>
-                        <p className="text-blue-700 font-medium">«Психиатрия и психотерапия: опыт интеграции»</p>
+                        <p className="text-[#763349] font-medium">«Психиатрия и психотерапия: опыт интеграции»</p>
                       </div>
                     </div>
                   </div>
@@ -310,7 +310,7 @@ const Index = () => {
                         <p className="text-sm text-gray-600 mb-2">
                           К.психол.н., Высшая школа экзистенциального анализа
                         </p>
-                        <p className="text-blue-700 font-medium">
+                        <p className="text-[#4e3842] font-medium">
                           «Современный экзистенциальный анализ: от концепции Виктора Франкла к попытке построения интегральной модели психотерапии»
                         </p>
                       </div>
@@ -325,7 +325,7 @@ const Index = () => {
                         <p className="text-sm text-gray-600 mb-2">
                           Клинический психолог, вице-президент АКПП, сертифицированный клиницист института Бека
                         </p>
-                        <p className="text-blue-700 font-medium">
+                        <p className="text-[#4e3842] font-medium">
                           «Концепция потребностей в когнитивно-поведенческой психотерапии»
                         </p>
                       </div>
@@ -340,7 +340,7 @@ const Index = () => {
                         <p className="text-sm text-gray-600 mb-2">
                           Преподаватели ООО "ИСТ", схема-терапевты, КБТ терапевты
                         </p>
-                        <p className="text-blue-700 font-medium">Схема-терапия и КБТ в клинической практике</p>
+                        <p className="text-[#4e3842] font-medium">Схема-терапия и КБТ в клинической практике</p>
                       </div>
                     </div>
                   </div>
@@ -353,7 +353,7 @@ const Index = () => {
                         <p className="text-sm text-gray-600 mb-2">
                           К.психол.н., директор Московского гештальт института, президент АПП
                         </p>
-                        <p className="text-blue-700 font-medium">
+                        <p className="text-[#4e3842] font-medium">
                           «Развитие и становление психотерапии в России. Путь длиной в 30 лет»
                         </p>
                       </div>
@@ -362,10 +362,10 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-red-500 bg-red-50/50">
+              <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-red-600">12:00 – 13:00</Badge>
+                    <Badge className="bg-[#763349]">12:00 – 13:00</Badge>
                     <CardTitle className="text-xl">Дискуссия-баттл</CardTitle>
                   </div>
                   <CardDescription className="text-lg font-semibold text-gray-900">
@@ -386,16 +386,16 @@ const Index = () => {
                 </CardHeader>
               </Card>
 
-              <Card className="border-l-4 border-l-green-600 bg-green-50/50">
+              <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
-                    <Badge className="bg-green-600">14:00 – 16:00</Badge>
+                    <Badge className="bg-[#763349]">14:00 – 16:00</Badge>
                     <CardTitle className="text-xl">Параллельные секции</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white p-6 rounded-lg border-2 border-green-200">
+                    <div className="bg-white p-6 rounded-lg border-2 border-[#763349]/20">
                       <h3 className="text-lg font-bold mb-3 text-gray-900">Секция 1: Клинический разбор</h3>
                       <p className="text-sm text-gray-600 mb-2">
                         <strong>Руководитель:</strong> Самохин Д.В.
@@ -408,7 +408,7 @@ const Index = () => {
                       </p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-lg border-2 border-green-200">
+                    <div className="bg-white p-6 rounded-lg border-2 border-[#763349]/20">
                       <h3 className="text-lg font-bold mb-3 text-gray-900">Секция 2: Мастерская терапевтических подходов</h3>
                       <p className="text-sm text-gray-600 mb-3">
                         Интерактивный разбор клинического случая в рамках различных терапевтических школ
@@ -421,10 +421,10 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-orange-500 bg-orange-50/50">
+              <Card className="border-l-4 border-l-[#5f3846] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-orange-600">16:00 – 17:00</Badge>
+                    <Badge className="bg-[#5f3846]">16:00 – 17:00</Badge>
                     <CardTitle className="text-xl">PSY-TALKS: Личная профессиональная история</CardTitle>
                   </div>
                 </CardHeader>
@@ -432,7 +432,7 @@ const Index = () => {
                   <div className="bg-white p-4 rounded-lg">
                     <h4 className="font-semibold text-gray-900">Москвин Вячеслав Вячеславович</h4>
                     <p className="text-sm text-gray-600 mb-1">Клинический психолог, КПТ терапевт</p>
-                    <p className="text-orange-700 font-medium">«Роль экспозиции в когнитивно-поведенческой психотерапии»</p>
+                    <p className="text-[#4e3842] font-medium">«Роль экспозиции в когнитивно-поведенческой психотерапии»</p>
                   </div>
 
                   <div className="bg-white p-4 rounded-lg">
@@ -443,15 +443,15 @@ const Index = () => {
                   <div className="bg-white p-4 rounded-lg">
                     <h4 className="font-semibold text-gray-900">Абрамов Сергей Владимирович</h4>
                     <p className="text-sm text-gray-600 mb-1">Врач-психиатр, психотерапевт, преподаватель НМИЦ ПН им. В.П. Сербского</p>
-                    <p className="text-orange-700 font-medium">«Неблагоприятный детский опыт: от Фрейда до эпигенетики»</p>
+                    <p className="text-[#4e3842] font-medium">«Неблагоприятный детский опыт: от Фрейда до эпигенетики»</p>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-purple-500 bg-purple-50/50">
+              <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-purple-600">17:00 – 17:30</Badge>
+                    <Badge className="bg-[#763349]">17:00 – 17:30</Badge>
                     <CardTitle className="text-xl">Интерактивная дискуссия</CardTitle>
                   </div>
                   <CardDescription className="text-lg font-semibold text-gray-900">
@@ -466,7 +466,7 @@ const Index = () => {
               <Card className="border-l-4 border-l-blue-600">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <Badge className="bg-blue-600">17:30 – 18:00</Badge>
+                    <Badge className="bg-[#4e3842]">17:30 – 18:00</Badge>
                     <CardTitle className="text-xl">Закрытие конференции. Нетворкинг</CardTitle>
                   </div>
                 </CardHeader>
@@ -480,7 +480,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm px-4 py-1">
+              <Badge className="mb-4 bg-gradient-to-r from-[#4e3842] to-[#763349] text-white text-sm px-4 py-1">
                 Спикеры
               </Badge>
               <h2 className="text-4xl font-bold mb-4 text-gray-900">
@@ -495,7 +495,7 @@ const Index = () => {
               <Card className="hover:shadow-xl transition-all border-2">
                 <CardContent className="pt-6">
                   <div className="flex gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#4e3842] to-[#763349] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon name="User" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
@@ -512,7 +512,7 @@ const Index = () => {
               <Card className="hover:shadow-xl transition-all border-2">
                 <CardContent className="pt-6">
                   <div className="flex gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#5f3846] to-[#763349] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon name="User" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
@@ -529,7 +529,7 @@ const Index = () => {
               <Card className="hover:shadow-xl transition-all border-2">
                 <CardContent className="pt-6">
                   <div className="flex gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#4e3842] to-[#5f3846] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon name="User" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
@@ -546,7 +546,7 @@ const Index = () => {
               <Card className="hover:shadow-xl transition-all border-2">
                 <CardContent className="pt-6">
                   <div className="flex gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#5f3846] to-[#763349] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon name="User" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
@@ -563,7 +563,7 @@ const Index = () => {
               <Card className="hover:shadow-xl transition-all border-2">
                 <CardContent className="pt-6">
                   <div className="flex gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#5f3846] to-[#763349] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon name="Users" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
@@ -580,7 +580,7 @@ const Index = () => {
               <Card className="hover:shadow-xl transition-all border-2">
                 <CardContent className="pt-6">
                   <div className="flex gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#4e3842] to-[#763349] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon name="User" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
