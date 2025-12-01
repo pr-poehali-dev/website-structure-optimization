@@ -45,6 +45,15 @@ const Index = () => {
               >
                 Спикеры
               </a>
+              <Button 
+                variant="outline"
+                size="sm"
+                onClick={() => window.open('https://finance.ozon.ru/apps/sbp/ozonbankpay/019a72f4-edc6-7423-abbf-5a3a4a72efcf', '_blank')}
+                className="border-[#763349] text-[#763349] hover:bg-[#763349] hover:text-white"
+              >
+                <Icon name="Heart" size={16} className="mr-1" />
+                Поддержать
+              </Button>
               <Button onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}>
                 Зарегистрироваться
               </Button>
@@ -72,9 +81,17 @@ const Index = () => {
             <p className="text-xl text-white/90 mb-4">
               II Конференция Московского отделения Российской психотерапевтической ассоциации
             </p>
-            <Badge className="mb-8 bg-white/20 text-white border-white/30 text-lg px-6 py-2">
-              Очное участие • Бесплатно
-            </Badge>
+            <div className="flex flex-col gap-3 items-center mb-8">
+              <Badge className="bg-white/20 text-white border-white/30 text-lg px-6 py-2">
+                Очное участие
+              </Badge>
+              <Badge className="bg-green-500/20 text-white border-green-400/30 text-lg px-6 py-2">
+                Участие бесплатно
+              </Badge>
+              <p className="text-white/80 text-sm max-w-md mt-2">
+                Вы можете поддержать нас, чтобы мы продолжали организовывать такие конференции
+              </p>
+            </div>
             <div className="flex flex-wrap gap-4 justify-center items-center text-lg">
               <div className="flex items-center gap-2">
                 <Icon name="MapPin" size={24} />
@@ -148,6 +165,23 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
+            <Card className="border-2 border-blue-500/30 bg-blue-50/50 hover:shadow-xl transition-shadow mb-8">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Icon name="Camera" className="text-blue-600" size={24} />
+                  </div>
+                  <CardTitle className="text-xl">Для действительных членов Московского отделения РПА</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  На конференции вы сможете сделать <strong>официальное фото для сайта</strong>. 
+                  Это прекрасная возможность обновить ваши профессиональные материалы и представить себя в сообществе.
+                </p>
+              </CardContent>
+            </Card>
 
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-2 hover:shadow-xl transition-shadow">
@@ -286,7 +320,7 @@ const Index = () => {
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">Шумский Владимир Борисович</h4>
                         <p className="text-sm text-gray-600 mb-2">
-                          К.психол.н., Высшая школа экзистенциального анализа
+                          К.п.н., Высшая школа экзистенциального анализа
                         </p>
                         <p className="text-[#4e3842] font-medium">
                           «Современный экзистенциальный анализ: от концепции Виктора Франкла к попытке построения интегральной модели психотерапии»
@@ -314,9 +348,9 @@ const Index = () => {
                     <div className="flex items-start gap-4">
                       <Badge variant="outline" className="mt-1">11:10 – 11:30</Badge>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-gray-900">Ялтонская А., Гегель Н., Марьясова Д.</h4>
+                        <h4 className="font-semibold text-gray-900">Команда ИСТ</h4>
                         <p className="text-sm text-gray-600 mb-2">
-                          Преподаватели Московского Института Схема-Терапии, схема-терапевты, КБТ терапевты
+                          Ялтонская А., Гегель Н., Марьясова Д. — представители Московского института Схема-терапии
                         </p>
                         <p className="text-[#4e3842] font-medium">Прошлое, настоящее и будущее в схема-терапии</p>
                       </div>
@@ -329,7 +363,7 @@ const Index = () => {
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">Хломов Даниил Нестерович</h4>
                         <p className="text-sm text-gray-600 mb-2">
-                          К.психол.н., директор Московского гештальт института, президент АПП
+                          К.п.н., директор Московского гештальт института, президент АПП
                         </p>
                         <p className="text-[#4e3842] font-medium">
                           «Развитие и становление психотерапии в России. Путь длиной в 30 лет»
@@ -360,15 +394,6 @@ const Index = () => {
                   <div className="flex items-center gap-3">
                     <Badge variant="secondary">13:00 – 14:00</Badge>
                     <CardTitle className="text-xl">Обеденный перерыв</CardTitle>
-                  </div>
-                </CardHeader>
-              </Card>
-
-              <Card className="border-l-4 border-l-gray-400">
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <Badge variant="secondary">15:50 – 16:00</Badge>
-                    <CardTitle className="text-xl">Перерыв</CardTitle>
                   </div>
                 </CardHeader>
               </Card>
@@ -411,7 +436,7 @@ const Index = () => {
               <Card className="border-l-4 border-l-gray-400">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <Badge variant="secondary">17:00 – 17:10</Badge>
+                    <Badge variant="secondary">15:50 – 16:00</Badge>
                     <CardTitle className="text-xl">Перерыв</CardTitle>
                   </div>
                 </CardHeader>
@@ -433,7 +458,8 @@ const Index = () => {
 
                   <div className="bg-white p-4 rounded-lg">
                     <h4 className="font-semibold text-gray-900">Хвощевская Софья Игоревна</h4>
-                    <p className="text-sm text-gray-600">Магистр психологии ВШЭ, психоаналитически ориентированный психолог</p>
+                    <p className="text-sm text-gray-600 mb-1">Магистр психологии ВШЭ, психоаналитически ориентированный психолог</p>
+                    <p className="text-[#4e3842] font-medium">«Техника активного слушания в психоаналитической психотерапии»</p>
                   </div>
 
                   <div className="bg-white p-4 rounded-lg">
@@ -598,7 +624,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-[#4e3842] to-[#763349] hover:from-[#5f3846] hover:to-[#874357]"
-                onClick={() => window.open('https://www.tinkoff.ru/rm/pukhovskiy.vladimir1/n9t883826', '_blank')}
+                onClick={() => window.open('https://finance.ozon.ru/apps/sbp/ozonbankpay/019a72f4-edc6-7423-abbf-5a3a4a72efcf', '_blank')}
               >
                 <Icon name="Heart" className="mr-2" size={20} />
                 Поддержать нас
