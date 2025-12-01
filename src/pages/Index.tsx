@@ -337,9 +337,9 @@ const Index = () => {
                     <div className="flex items-start gap-4">
                       <Badge variant="outline" className="mt-1">11:10 – 11:30</Badge>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-gray-900">Команда ИСТ</h4>
+                        <h4 className="font-semibold text-gray-900">Представители Московского института Схема-терапии</h4>
                         <p className="text-sm text-gray-600 mb-2">
-                          Ялтонская А., Гегель Н., Марьясова Д. — представители Московского института Схема-терапии
+                          Ялтонская А., Гегель Н., Марьясова Д.
                         </p>
                         <p className="text-[#4e3842] font-medium">Прошлое, настоящее и будущее в схема-терапии</p>
                       </div>
