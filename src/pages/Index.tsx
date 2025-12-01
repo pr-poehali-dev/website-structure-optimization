@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-50">
       <header className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
@@ -44,7 +44,38 @@ const Index = () => {
                 <p className="text-sm text-gray-600">Векторы психотерапии</p>
               </div>
             </div>
-            <Button onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}>
+            
+            <nav className="hidden md:flex items-center gap-6">
+              <a 
+                href="#about" 
+                onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}
+                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                О конференции
+              </a>
+              <a 
+                href="#program" 
+                onClick={(e) => { e.preventDefault(); document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' }); }}
+                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Программа
+              </a>
+              <a 
+                href="#speakers" 
+                onClick={(e) => { e.preventDefault(); document.getElementById('speakers')?.scrollIntoView({ behavior: 'smooth' }); }}
+                className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Спикеры
+              </a>
+              <Button onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}>
+                Зарегистрироваться
+              </Button>
+            </nav>
+
+            <Button 
+              className="md:hidden"
+              onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Зарегистрироваться
             </Button>
           </div>
@@ -80,59 +111,142 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-              О конференции
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon name="Users" className="text-blue-600" size={32} />
+      <section id="about" className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm px-4 py-1">
+                О конференции
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                Векторы психотерапии: <br />изменения и постоянство
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Главное событие года в профессиональном сообществе психотерапевтов. 
+                Место встречи экспертов, обмена опытом и обсуждения будущего психотерапии.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="group hover:scale-105 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 h-full border-2 border-blue-200 hover:border-blue-400 transition-colors">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Icon name="Users" className="text-white" size={32} />
                   </div>
-                  <CardTitle>Эксперты</CardTitle>
-                  <CardDescription>
-                    Ведущие специалисты в области психотерапии и психиатрии
-                  </CardDescription>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">15+ спикеров</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Ведущие специалисты в области психотерапии и психиатрии. Профессора, 
+                    д.м.н., президенты профессиональных ассоциаций.
+                  </p>
+                </div>
+              </div>
+
+              <div className="group hover:scale-105 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 h-full border-2 border-purple-200 hover:border-purple-400 transition-colors">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Icon name="Lightbulb" className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">5 направлений</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    КПТ, схема-терапия, экзистенциальный анализ, гештальт, системная терапия. 
+                    ИИ в психотерапии и клинические разборы.
+                  </p>
+                </div>
+              </div>
+
+              <div className="group hover:scale-105 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-8 h-full border-2 border-indigo-200 hover:border-indigo-400 transition-colors">
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Icon name="MessageCircle" className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Нетворкинг</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Обмен опытом с коллегами, профессиональное общение, новые контакты 
+                    и возможности для сотрудничества.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border-2 hover:shadow-xl transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                      <Icon name="Target" className="text-green-600" size={24} />
+                    </div>
+                    <CardTitle className="text-xl">Для кого конференция</CardTitle>
+                  </div>
                 </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <span className="text-gray-700">Практикующие психотерапевты и психологи</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <span className="text-gray-700">Врачи-психиатры и клинические психологи</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <span className="text-gray-700">Студенты и специалисты в обучении</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-green-600 mt-1" size={18} />
+                      <span className="text-gray-700">Преподаватели психотерапевтических программ</span>
+                    </li>
+                  </ul>
+                </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="border-2 hover:shadow-xl transition-shadow">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon name="Lightbulb" className="text-purple-600" size={32} />
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                      <Icon name="Star" className="text-orange-600" size={24} />
+                    </div>
+                    <CardTitle className="text-xl">Что вы получите</CardTitle>
                   </div>
-                  <CardTitle>Актуальные темы</CardTitle>
-                  <CardDescription>
-                    Современные подходы, ИИ в психотерапии, клинические разборы
-                  </CardDescription>
                 </CardHeader>
-              </Card>
-
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon name="MessageCircle" className="text-indigo-600" size={32} />
-                  </div>
-                  <CardTitle>Нетворкинг</CardTitle>
-                  <CardDescription>
-                    Обмен опытом с коллегами и профессиональное общение
-                  </CardDescription>
-                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <span className="text-gray-700">Знания от ведущих экспертов России</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <span className="text-gray-700">Сертификат участника конференции</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <span className="text-gray-700">Материалы докладов и презентации</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-orange-600 mt-1" size={18} />
+                      <span className="text-gray-700">Новые профессиональные контакты</span>
+                    </li>
+                  </ul>
+                </CardContent>
               </Card>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section id="program" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-              Программа конференции
-            </h2>
+            <div className="text-center mb-12">
+              <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm px-4 py-1">
+                Программа
+              </Badge>
+              <h2 className="text-4xl font-bold text-gray-900">
+                Программа конференции
+              </h2>
+            </div>
 
             <div className="space-y-6">
               <Card className="border-l-4 border-l-blue-600">
@@ -353,6 +467,134 @@ const Index = () => {
                   </div>
                 </CardHeader>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="speakers" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm px-4 py-1">
+                Спикеры
+              </Badge>
+              <h2 className="text-4xl font-bold mb-4 text-gray-900">
+                Ведущие эксперты России
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Профессора, доктора наук и ведущие практики в области психотерапии
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="hover:shadow-xl transition-all border-2">
+                <CardContent className="pt-6">
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Icon name="User" className="text-white" size={32} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Костюк Георгий Петрович</h3>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Профессор, д.м.н., главный врач ПКБ №1 им. Н.А. Алексеева
+                      </p>
+                      <Badge variant="outline" className="text-xs">Психиатрия и психотерапия</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all border-2">
+                <CardContent className="pt-6">
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Icon name="User" className="text-white" size={32} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Шумский Владимир Борисович</h3>
+                      <p className="text-sm text-gray-600 mb-2">
+                        К.психол.н., Высшая школа экзистенциального анализа
+                      </p>
+                      <Badge variant="outline" className="text-xs">Экзистенциальный анализ</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all border-2">
+                <CardContent className="pt-6">
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Icon name="User" className="text-white" size={32} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Зрютин Максим Александрович</h3>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Вице-президент АКПП, клиницист института Бека
+                      </p>
+                      <Badge variant="outline" className="text-xs">КПТ</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all border-2">
+                <CardContent className="pt-6">
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Icon name="User" className="text-white" size={32} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Хломов Даниил Нестерович</h3>
+                      <p className="text-sm text-gray-600 mb-2">
+                        К.психол.н., директор Московского гештальт института
+                      </p>
+                      <Badge variant="outline" className="text-xs">Гештальт-терапия</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all border-2">
+                <CardContent className="pt-6">
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Icon name="Users" className="text-white" size={32} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Команда ИСТ</h3>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Ялтонская А., Гегель Н., Марьясова Д.
+                      </p>
+                      <Badge variant="outline" className="text-xs">Схема-терапия</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all border-2">
+                <CardContent className="pt-6">
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Icon name="User" className="text-white" size={32} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Мальцева Елена Владимировна</h3>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Директор Союза охраны психического здоровья
+                      </p>
+                      <Badge variant="outline" className="text-xs">Модератор</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-gray-600 mb-6">
+                И другие ведущие специалисты в области психотерапии
+              </p>
             </div>
           </div>
         </div>
