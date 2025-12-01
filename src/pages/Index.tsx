@@ -274,7 +274,7 @@ const Index = () => {
               <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-[#763349]">10:15 – 12:00</Badge>
+                    <Badge className="bg-[#763349]">10:15 – 11:50</Badge>
                     <CardTitle className="text-2xl">Пленарное заседание</CardTitle>
                   </div>
                   <CardDescription className="text-lg font-semibold text-gray-900 mb-4">
@@ -391,7 +391,7 @@ const Index = () => {
               <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
-                    <Badge className="bg-[#763349]">14:00 – 16:00</Badge>
+                    <Badge className="bg-[#763349]">14:00 – 15:50</Badge>
                     <CardTitle className="text-xl">Параллельные секции</CardTitle>
                   </div>
                 </CardHeader>
@@ -472,14 +472,14 @@ const Index = () => {
               <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-[#763349]">17:00 – 17:30</Badge>
+                    <Badge className="bg-[#763349]">17:10 – 17:30</Badge>
                     <CardTitle className="text-xl">Интерактивная дискуссия</CardTitle>
                   </div>
                   <CardDescription className="text-lg font-semibold text-gray-900">
                     «Цифра и человек: финал как начало диалога»
                   </CardDescription>
                   <CardDescription className="text-base mt-2">
-                    Модератор: Мальцева Е.В. – директор Союза охраны психического здоровья, заместитель председателя Московского отделения РПА
+                    Модератор: Мальцева Е.В. – клинический психолог, директор Союза охраны психического здоровья, заместитель председателя Московского отделения РПА
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -605,7 +605,7 @@ const Index = () => {
                       <Icon name="User" className="text-white" size={32} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">Мальцева Елена Владимировна</h3>
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">Мальцева Елена Витальевна</h3>
                       <p className="text-sm text-gray-600 mb-2">
                         Директор Союза охраны психического здоровья
                       </p>
