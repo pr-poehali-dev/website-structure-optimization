@@ -292,19 +292,6 @@ const Index = () => {
                 <CardContent className="space-y-4">
                   <div className="bg-white p-4 rounded-lg">
                     <div className="flex items-start gap-4">
-                      <Badge variant="outline" className="mt-1 border-[#4e3842] text-[#4e3842]">09:45 – 10:30</Badge>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-gray-900">Костюк Георгий Петрович</h4>
-                        <p className="text-sm text-gray-600 mb-2">
-                          Профессор, д.м.н., главный врач ПКБ №1 им. Н.А. Алексеева, главный психиатр Москвы
-                        </p>
-                        <p className="text-[#763349] font-medium">«Психиатрия и психотерапия: опыт интеграции»</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white p-4 rounded-lg">
-                    <div className="flex items-start gap-4">
                       <Badge variant="outline" className="mt-1">10:30 – 10:50</Badge>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">Шумский Владимир Борисович</h4>
