@@ -431,7 +431,7 @@ const Index = () => {
               <Card className="border-l-4 border-l-[#5f3846] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-[#5f3846]">16:00 – 17:00</Badge>
+                    <Badge className="bg-[#5f3846]">16:00 – 16:35</Badge>
                     <CardTitle className="text-xl">PSY-TALKS: Личная профессиональная история</CardTitle>
                   </div>
                 </CardHeader>
