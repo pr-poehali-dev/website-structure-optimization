@@ -365,7 +365,7 @@ const Index = () => {
               <Card className="border-l-4 border-l-[#763349] bg-[#763349]/5">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-[#763349]">12:00 – 12:30</Badge>
+                    <Badge className="bg-[#763349]">12:00 – 12:40</Badge>
                     <CardTitle className="text-xl">Дискуссия</CardTitle>
                   </div>
                   <CardDescription className="text-lg font-semibold text-gray-900">
@@ -380,7 +380,7 @@ const Index = () => {
               <Card className="border-l-4 border-l-[#763349]">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className="bg-[#763349]">12:30 – 13:00</Badge>
+                    <Badge className="bg-[#763349]">12:40 – 13:00</Badge>
                     <CardTitle className="text-xl">Видеообращение</CardTitle>
                   </div>
                   <CardDescription className="text-base mt-2">
