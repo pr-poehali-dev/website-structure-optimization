@@ -292,7 +292,7 @@ const Index = () => {
                 <CardContent className="space-y-4">
                   <div className="bg-white p-4 rounded-lg">
                     <div className="flex items-start gap-4">
-                      <Badge variant="outline" className="mt-1 border-[#4e3842] text-[#4e3842]">10:15 – 10:30</Badge>
+                      <Badge variant="outline" className="mt-1 border-[#4e3842] text-[#4e3842]">09:45 – 10:30</Badge>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">Костюк Георгий Петрович</h4>
                         <p className="text-sm text-gray-600 mb-2">
@@ -342,6 +342,7 @@ const Index = () => {
                           Ялтонская А.В., к.м.н., врач-психиатр, психотерапевт. Соосновательница Московского Института Схема Терапии (МИСТ) и психологического центра MИСТherapy, Гегель Наталья Викторовна Врач-психиатр, психотерапевт, КБТ терапевт, схема-терапевт (сертифицированный в ISST тренер/супервизор), соучредитель Московского Института Схема-Терапии, Марьясова Дарья Андреевна К.м.н., врач-психиатр, психотерапевт, схема-терапевт (сертификация ISST продвинутого уровня), КБТ-терапевт (сертифицированный терапевт и супервизор EABCT).
                         </p>
                         <p className="text-[#4e3842] font-medium">Прошлое, настоящее и будущее в схема-терапии</p>
+                        <p className="text-sm text-gray-500 mt-2 italic">Видеодоклад</p>
                       </div>
                     </div>
                   </div>
